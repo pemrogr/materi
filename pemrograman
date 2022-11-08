@@ -1,0 +1,114 @@
+import { Text, View, StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
+export default function Praktikum4() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.judul}>
+        Praktikum Minggu 4
+      </Text>
+      <Text style={styles.isi}>
+        Halaman ini disusun untuk memenuhi pengumpulan tugas praktikum minggu 4
+      </Text>
+      <View style={styles.container_box}>
+      <View style={styles.box1}>
+      <Text style={styles.box_text}>
+        <Text style={styles.judul}>Nama Saya</Text>
+        <Text style={styles.nama}>{'\n'}Zeny Zanuba Arifah{'\n'}</Text>
+        <Text style={styles.judul}>Program Studi</Text>
+        <Text style={styles.nama}>{'\n'}Teknologi Informasi{'\n'}</Text>
+      </Text>
+      </View>
+        <View style={styles.box2}>
+        <Text style={styles.box_text}>
+        <Text style={styles.judul}>Panggilan</Text>
+        <Text style={styles.nama}>{'\n'}Zeny{'\n'}</Text>
+        </Text>
+      </View>
+      <View style={styles.box3}>
+      <Text style={styles.box_text}>
+        <Text style={styles.judul}>Telepon</Text>
+        <Text style={styles.nama}>{'\n'}085851041585{'\n'}</Text>
+      </Text>
+      </View>
+      <View style={styles.box4}>
+      <Text style={styles.box_text}>
+        <Text style={styles.judul}>NIM</Text>
+        <Text style={styles.nama}>{'\n'}1202200062{'\n'}</Text>
+      </Text>
+      </View>
+      </View>
+      </View>
+  );
+}
+
+const styles = StyleSheet.create({
+container: {
+flex: 1,
+justifyContent: 'center',
+paddingTop: Constants.statusBarHeight,
+backgroundColor: '#ecf0f1',
+padding: 8,
+},
+judul: {
+margin: 24,
+fontSize: 20,
+fontWeight: '700',
+textAlign: 'center',
+},
+isi: {
+  margin: 24,
+  fontSize: 16,
+  textAlign: 'justify',
+},
+container_box: {
+flex: 1,
+alignItems: 'center',
+paddingTop: Constants.statusBarHeight,
+width: '100%',
+},
+box1: {
+justifyContent: 'center',
+alignItems: 'center',
+width: '85%',
+height: 120,
+marginBottom: 20,
+backgroundColor: '#C7FF29',
+padding: 10
+},
+box2: {
+justifyContent: 'center',
+alignItems: 'center',
+width: '85%',
+height: 70,
+marginBottom: 20,
+backgroundColor: '#C7FF29',
+padding: 10
+},
+box3: {
+justifyContent: 'center',
+alignItems: 'center',
+width: '85%',
+height: 70,
+marginBottom: 20,
+backgroundColor: '#C7FF29',
+padding: 10
+},
+box4: {
+justifyContent: 'center',
+alignItems: 'center',
+width: '85%',
+height: 70,
+marginBottom: 20,
+backgroundColor: '#C7FF29',
+padding: 10
+},
+box_text: {
+  flexWrap: 'wrap',
+  fontSize: 16,
+  textAlign: 'center',
+},
+nama:{
+  fontSize:20,
+},
+
+});
